@@ -42,9 +42,23 @@ var dataSiswa = [
 var identitas = ["Nama","Nilai","Rank"];
 
 //Silahkan gunakan proses perulangan untuk mengambil semua data array dataSiswa dan tampilkan outputnya.
-for(var i = 0;i < dataSiswa.length; i++){
+/* for(var i = 0;i < dataSiswa.length; i++){
     for(var j = 0; j < dataSiswa[i].length; j++){
         document.write(`${identitas[j]} : ${dataSiswa[i][j]} <br>`);
     }
     document.write('<br>');
+} */
+
+for (var i = 0, l1 = dataSiswa.length; i < l1; i++) {
+    for (var j = 0, l2 = dataSiswa[i].length; j < l2; j++) {
+        if(j==0){
+            document.write('Nama : ' + dataSiswa[i][j], '<br>')
+        }
+        if(j==1){
+            document.write('Nilai angka : ' + dataSiswa[i][j], '<br>')
+        }
+        if(j==2){
+            document.write('Nilai huruf : ' + dataSiswa[i][j], '<br>')
+        }
+    }
 }
